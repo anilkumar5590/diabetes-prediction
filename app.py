@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 
 # Set Streamlit page configuration
 st.set_page_config(
-    page_title="Diabetes Prediction Prediction",
+    page_title="Diabetes Prediction ",
 )
 
 # Load the diabetes dataset
