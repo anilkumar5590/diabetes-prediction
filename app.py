@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
 # Set Streamlit page configuration
@@ -33,10 +33,10 @@ X = diabetes_df[['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'In
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.8, random_state=42)
 
 # Create a Random Forest Classifier model
-decison_tree_model = DecisionTreeClassifier()
+random_forest_model = RandomForestClassifier(n_estimators=100, random_state=42)
 
 # Train the model using the training data
-decison_tree_model.fit(X_train, y_train)
+random_forest_model.fit(X_train, y_train)
 
 # Gather user input
 user_input = [pregnancies, glucose, bp, skinthickness, insulin, bmi, diabetes_pedigree_function, age]
@@ -54,7 +54,7 @@ if st.button('Make Prediction'):
         st.error('⚠️ Please fill all the above fields ')
     else:
         # Make prediction using the Random Forest model
-        prediction_value = decison_tree_model.predict([user_input])
+        prediction_value = random_forest_model.predict([user_input])
         if prediction_value == 1:
             # Display an error message if the prediction is positive for diabetes
             st.error('You have Diabetes. Please consult a doctor immediately 🧑🏻‍⚕️')
