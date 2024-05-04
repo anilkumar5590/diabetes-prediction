@@ -97,7 +97,7 @@ from sklearn.model_selection import train_test_split
 3. Output: The model's prediction is displayed to the user through the Streamlit app, along with appropriate messages indicating whether the user is likely to have diabetes or not.
 
 ## Preview
-[Checkout Here]()
+[Checkout Here](https://diabetes-prediction-by-anil79.streamlit.app/)
 
 ## 🔗 Follow us
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anilkumarkonathala/)
