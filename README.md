@@ -1,7 +1,7 @@
 # Hi, I'm Anil Kumar! 👋
 
 ## Diabetes Prediction
-This Streamlit app predicts the likelihood of diabetes based on user input. It utilizes a Desicion Tree Classifier model trained on a diabetes dataset to make predictions.
+This Streamlit app predicts the likelihood of diabetes based on user input. It utilizes a Random Forest Classifier model trained on a diabetes dataset to make predictions.
 
 ## Features
 - Input fields for user data including pregnancies, glucose level, blood pressure, skin thickness, insulin level, BMI, diabetes pedigree function, and age.
